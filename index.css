@@ -17,7 +17,7 @@ body {
 
 #chameleon {
 	position: absolute;
-	top: 87%;
+	bottom: 10px;
 	left: 0px;
 }
 
@@ -29,7 +29,7 @@ body {
 	height: 97%;
 	z-index: 10;
 	left: 130px;
-	bottom: 40px;
+	bottom: 50px;
 }
 
 .chameleon-container {
