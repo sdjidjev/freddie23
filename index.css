@@ -1,0 +1,132 @@
+body {
+	margin: 0px;
+	background: url('background.png') no-repeat fixed;
+	background-size: cover;
+	height: 700px;
+}
+
+#top {
+	height: 600px;
+	background-color: pink;
+}
+
+#bottom {
+	height: 100px;
+	background-color: green;
+}
+
+#chameleon {
+	position: absolute;
+	top: 87%;
+	left: 0px;
+}
+
+#tongue {
+	display: none;
+	position: absolute;
+	background: #FF6666;
+	width: 5px;
+	height: 97%;
+	z-index: 10;
+	left: 130px;
+	bottom: 40px;
+}
+
+.chameleon-container {
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	left: 0px;
+}
+
+.fly {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	left: 0px;
+	top: 0px;
+}
+
+.fly-container {
+	position: absolute;
+	width: 100%;
+	height: 70%;
+}
+
+.dialogue {
+	border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin: auto;
+	top: 20%;
+	background: rgba(0,0,0,0.7);
+	position: relative;
+	width: 70%;
+	height: auto;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+img {
+	opacity: 0.4;
+}
+
+.game-button {
+   border: 1px solid #eeeeee;
+   border-radius: 5px;
+   background-color: rgba(0,0,0,0.6);
+   color: #eeeeee;
+   font-size: 18px;
+   padding: 10px;
+}
+
+.game-button:hover {
+	cursor: pointer;
+	background-color: #eeeeee;
+    color: #000000;
+}
+
+.end-game {
+	position: relative;
+	width: 80%;
+}
+
+#replay-dialogue {
+	display: none;
+}
