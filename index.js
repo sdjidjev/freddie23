@@ -16,10 +16,11 @@ $(document).ready(function(){
 			$(flyArray[elem]).show();
 		}
 	});
+	console.log(window.screen.availWidth);
 	var flyArray = $('.fly').toArray();
 	numFlies = flyArray.length;
 	$('.fly').each(function(index){
-		$(this).css('left', String(Math.random() * 1200 + 2)+"px");
+		$(this).css('left', String(Math.random() * (window.screen.availWidth - 35) + 2)+"px");
 		$(this).css('top', String(Math.random() * 500 + 2)+"px");
 	});
 	$('body').keydown(function(e) {
