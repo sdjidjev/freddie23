@@ -34,7 +34,7 @@ $(document).ready(function(){
 		else if(e.keyCode == 39 && startGame) { 
 			$('#chameleon-pic').attr('src', 'chameleon-right.png');
 			$('#tongue').css('left','130px');
-			if (($('.chameleon-container').position().left / $('.chameleon-container').parent().width() * 100) <= 89) {
+			if (($('.chameleon-container').position().left <= window.screen.availWidth - 150) {
 				$('.chameleon-container').css('left', String($('.chameleon-container').position().left+20)+"px");
 			}
 		}
