@@ -16,7 +16,6 @@ $(document).ready(function(){
 			$(flyArray[elem]).show();
 		}
 	});
-	console.log(window.screen.availWidth);
 	var flyArray = $('.fly').toArray();
 	numFlies = flyArray.length;
 	$('.fly').each(function(index){
@@ -34,7 +33,7 @@ $(document).ready(function(){
 		else if(e.keyCode == 39 && startGame) { 
 			$('#chameleon-pic').attr('src', 'chameleon-right.png');
 			$('#tongue').css('left','130px');
-			if (($('.chameleon-container').position().left <= window.screen.availWidth - 170)) {
+			if (($('.chameleon-container').position().left <= window.screen.availWidth - 165)) {
 				$('.chameleon-container').css('left', String($('.chameleon-container').position().left+20)+"px");
 			}
 		}
